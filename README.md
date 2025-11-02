@@ -9,6 +9,8 @@ Users can **adopt, feed, play, and check the status** of their on-chain pets —
 **Contract ID:** `CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7`  
 [View on Stellar Explorer 🌐](https://stellar.expert/explorer/testnet/contract/CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7)
 
+<img width="1078" height="411" alt="image" src="https://github.com/user-attachments/assets/9f0d1091-8115-45dd-9eaf-6824a21ca270" />
+
 ---
 
 ## 🧠 Smart Contract Functions
