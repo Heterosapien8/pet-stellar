@@ -33,37 +33,16 @@ struct Pet {
 }
 
 Create pet command:
-stellar contract invoke \
-  --id CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7 \
-  --network testnet \
-  --source pet-owner \
-  -- \
-  create_pet \
-  $(stellar keys address pet-owner) "Buddy"
+stellar contract invoke --id CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7 --network testnet --source pet-owner -- create_pet --owner $(stellar keys address pet-owner) --name "Kevin"
 
 Feed pet command:
-stellar contract invoke \
-  --id CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7 \
-  --network testnet \
-  --source pet-owner \
-  -- \
-  feed_pet \
-  $(stellar keys address pet-owner)
+stellar contract invoke --id CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7 --network testnet --source pet-owner -- feed_pet --owner $(stellar keys address pet-owner)
+
 
 Play with pet command:
-stellar contract invoke \
-  --id CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7 \
-  --network testnet \
-  --source pet-owner \
-  -- \
-  play_pet \
-  $(stellar keys address pet-owner)
+stellar contract invoke --id CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7 --network testnet --source pet-owner -- play_pet --owner $(stellar keys address pet-owner)
+
 
 check pet status command:
-stellar contract invoke \
-  --id CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7 \
-  --network testnet \
-  --source pet-owner \
-  -- \
-  get_pet_status \
-  $(stellar keys address pet-owner)
+stellar contract invoke --id CCJ3ITE2DBRYX52RGYOJDGWEQW5QFPOAL5NHAARJDCADD3BT2TR7GFV7 --network testnet --source pet-owner -- get_pet_status --owner $(stellar keys address pet-owner)
+
